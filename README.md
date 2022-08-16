@@ -24,8 +24,9 @@ This project we will create an EC2 instance AMI using Packer and configure Apach
 First make sure [AWS CLI is installed](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) and you have [configured authorization](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) properly
 
 After that:
+
 Create a AWS cli profile as a safe practice to use AWS credentials.
-Enter profile name in "aws_profile": "" in ami-build.json file.
+Enter profile name in "aws_profile" in ami-build.json file.
 
 
 ```sh
@@ -34,12 +35,12 @@ git clone https://github.com/yashhirulkar701/Packer-apache-webserver-AMI.git
 cd 'Packer-apache-webserver-AMI'
 ```
 
-### To inspect the ami-build.json file
+#### To inspect the ami-build.json file
 ```sh
 packer inspect ami-build.json
 ```
 
-### To build the image using ami-build.json file
+#### To build the image using ami-build.json file
 ```sh
 packer build ami-build.json
 ```
