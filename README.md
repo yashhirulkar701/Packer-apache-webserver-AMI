@@ -8,10 +8,10 @@ This project we will create an EC2 instance AMI using Packer and configure Apach
 ## Tech
 
 - [Packer](https://www.packer.io/)
-### Packer is a tool to create identical machine images for multiple platforms from a single source configuration.
+#### Packer is a tool to create identical machine images for multiple platforms from a single source configuration.
 
 - [Ansible](https://www.ansible.com/)
-### Ansible is a radically simple IT automation tool for configuration management that makes your applications and systems easier to deploy and maintain.
+#### Ansible is a radically simple IT automation tool for configuration management that makes your applications and systems easier to deploy and maintain.
 
 ## Installation
 
@@ -22,6 +22,7 @@ This project we will create an EC2 instance AMI using Packer and configure Apach
 ## Packer Instructions
 
 First make sure [AWS CLI is installed](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) and you have [configured authorization](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) properly
+
 After that:
 Create a AWS cli profile as a safe practice to use AWS credentials.
 Enter profile name in "aws_profile": "" in ami-build.json file.
@@ -29,6 +30,7 @@ Enter profile name in "aws_profile": "" in ami-build.json file.
 
 ```sh
 git clone https://github.com/yashhirulkar701/Packer-apache-webserver-AMI.git
+
 cd 'Packer-apache-webserver-AMI'
 ```
 
