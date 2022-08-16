@@ -9,15 +9,16 @@ This project we will create an EC2 instance AMI using Packer and configure Apach
 
 - [Packer](https://www.packer.io/)
 
-## Packer: It's a tool to create identical machine images for multiple platforms from a single source configuration.
+### Packer is a tool to create identical machine images for multiple platforms from a single source configuration.
 
 - [Ansible](https://www.ansible.com/)
 
-## Ansible is a radically simple IT automation tool for configuration management that makes your applications and systems easier to deploy and maintain.
+### Ansible is a radically simple IT automation tool for configuration management that makes your applications and systems easier to deploy and maintain.
 
 ## Installation
 
 [Packer Installation](https://www.packer.io/downloads)
+
 [Ansible Installation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 
 ## Packer Instructions
