@@ -8,11 +8,9 @@ This project we will create an EC2 instance AMI using Packer and configure Apach
 ## Tech
 
 - [Packer](https://www.packer.io/)
-
 ### Packer is a tool to create identical machine images for multiple platforms from a single source configuration.
 
 - [Ansible](https://www.ansible.com/)
-
 ### Ansible is a radically simple IT automation tool for configuration management that makes your applications and systems easier to deploy and maintain.
 
 ## Installation
@@ -34,12 +32,12 @@ git clone https://github.com/yashhirulkar701/Packer-apache-webserver-AMI.git
 cd 'Packer-apache-webserver-AMI'
 ```
 
-##To inspect the ami-build.json file
+### To inspect the ami-build.json file
 ```sh
 packer inspect ami-build.json
 ```
 
-##To build the image using ami-build.json file
+### To build the image using ami-build.json file
 ```sh
 packer build ami-build.json
 ```
