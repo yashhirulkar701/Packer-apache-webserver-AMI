@@ -1,0 +1,41 @@
+{
+    "variables": {
+      "region": "ap-south-1",
+      "source_ami": "ami-08df646e18b182346",
+      "instance_type": "t2.micro",
+      "ssh_username": "ec2-user",
+      "aws_profile": "yash"
+    },
+  
+    "builders": [
+      {
+        "type": "amazon-ebs",
+        "region": "{{user `region`}}",
+        "profile": "{{user `aws_profile`}}",
+        "source_ami": "{{user `source_ami`}}",
+        "ami_name": "packer-{{isotime `Jan-_2-15_04_05.000`}}",
+        "instance_type": "{{user `instance_type`}}",
+        "ssh_username": "{{user `ssh_username`}}"
+      }
+    ],
+
+    "provisioners": [
+        {
+            "type": "file",
+            "source": "script.sh",
+            "destination": "/tmp/script.sh"
+        },
+        {
+        "type": "shell",
+        "inline": 
+        [
+            "/tmp/script.sh",
+            "sudo amazon-linux-extras install ansible2" 
+        ]
+        },
+        {
+          "type": "ansible-local",
+          "playbook_file": "./playbook.yml"
+        }
+      ]
+  }

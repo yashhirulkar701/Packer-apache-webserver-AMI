@@ -1,0 +1,21 @@
+- name: 'Provision Image'
+  hosts: all
+  become: true
+  
+  tasks:
+    - name: Install apache packages 
+      yum:
+        name: httpd
+        state: present
+
+    - name: Copying files
+      template:
+        src: "/tmp/index.html"
+        dest: "/var/www/html/index.html"
+
+    - name: Start service httpd 
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
