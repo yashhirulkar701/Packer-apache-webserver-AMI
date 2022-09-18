@@ -2,10 +2,6 @@
 
 ![SWUbanner](https://imgs.search.brave.com/YInXeCShZnH9xqYBK2CPiwQjiLhey3GtrhVTPjiGTjU/rs:fit:1040:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5B/Q1ZFcVV2UlNxSWxy/TVItcVVMc2FnSGFE/WSZwaWQ9QXBp)
 
-##
-
-![Terraform Open Source Modules](https://docs.cloudposse.com/images/terraform-open-source-modules.svg)
-
 This project we will create an EC2 instance AMI using Packer and configure Apache Webserver in it using Ansible and Shell provisioners.
 
 - This project gives you clear idea of DevOps tools Packer and Ansible.
